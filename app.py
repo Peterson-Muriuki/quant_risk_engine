@@ -12,7 +12,7 @@ st.set_page_config(page_title="Quant Risk Engine", layout="wide")
 st.title("🛡️ Macro-Sentiment Risk Dashboard")
 st.markdown("""
 This dashboard combines **Fixed Income Yield Curve Fitting (M1)** with 
-**Equity Risk Metrics (M3/Course 9)** and **Sentiment Analysis (M5)**.
+**Equity Risk Metrics ** and **Sentiment Analysis **.
 """)
 
 # --- Sidebar Inputs ---
@@ -67,7 +67,7 @@ if not data.empty:
             st.subheader("Daily Returns Distribution")
             st.line_chart(returns)
             
-            # --- Section 3: Alternative Data - Sentiment Analysis (M5) ---
+            # --- Section 3: Alternative Data - Sentiment Analysis ---
             st.divider()
             st.header("3. Alternative Data: Sentiment Analysis")
             sentiment_label, score = get_sentiment(ticker)

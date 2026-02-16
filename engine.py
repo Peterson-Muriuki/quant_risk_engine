@@ -32,7 +32,7 @@ def calculate_risk_metrics(returns):
     Calculates Volatility and Historical VaR.
     Ensures output is a standard float for formatting.
     """
-    # Annualized Volatility (M2/M3)
+    # Annualized Volatility 
     vol = returns.std() * np.sqrt(252)
     
     # Historical Value at Risk (95% confidence)
