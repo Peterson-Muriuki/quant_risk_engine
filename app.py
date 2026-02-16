@@ -76,7 +76,7 @@ if not data.empty:
             s_col1.metric("Market Sentiment", sentiment_label)
             s_col2.metric("Sentiment Score (NLP)", f"{score:.2f}")
 
-            st.info(f"The NLP Engine (M5) has analyzed simulated headlines for {ticker}. "
+            st.info(f"The NLP Engine has analyzed simulated headlines for {ticker}. "
                     f"A score > 0 indicates positive momentum.")
             
         else:
